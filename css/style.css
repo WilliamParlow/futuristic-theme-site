@@ -1,0 +1,132 @@
+/*----------*/
+/* Generics */
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 160%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 130%;
+}
+
+h6 {
+    font-size: 115%;
+    font-weight: bold;
+}
+
+html, body {
+    background-color: var(--navy-blue);
+}
+
+.header--big {
+    font-size: 300%;
+}
+
+
+
+
+
+/*----------------*/
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    padding: 0 2rem;
+    height: 6rem;
+}
+.navbar__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--aqua);
+    margin-right: 4rem;
+    cursor: default;
+    user-select: none;
+}
+.navbar__logo > h3 {
+    font-weight: bold;
+}
+.navbar__logo > span {
+    font-size: 70%;
+}
+
+.navbar__links-item {
+    display: block;
+    height: 100%;
+}
+
+.navbar__links-item > .navbar__link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: var(--aqua);
+    padding: 0 1rem;
+    transition: .2s;
+}
+
+.navbar__links-item > .navbar__link:hover {
+    transition: .2s;
+    color: var(--yellow-light);
+}
+
+.navbar__links-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+/*----------------------*/
+/* Presentation section */
+
+.presentation {
+    height: calc(100vh - 6rem);
+    background-image: url("../public/imgs/homepage.webp");
+    background-size: 100% 100%;
+}
+
+.presentation__intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #11050b3f;
+    color: var(--yellow-light);
+}
+
+.presentation__intro > h3 {
+    margin-bottom: 2rem;
+}
+
+.presentation__intro > p {
+    font-size: 90%;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.presentation__intro > a {
+    color: var(--orange-light);
+}
