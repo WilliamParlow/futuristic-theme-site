@@ -37,6 +37,10 @@ html, body {
     font-size: 300%;
 }
 
+.section--black {
+    background-color: var(--black);
+}
+
 
 
 
@@ -104,6 +108,7 @@ html, body {
     height: calc(100vh - 6rem);
     background-image: url("../public/imgs/homepage.webp");
     background-size: 100% 100%;
+    padding: 0 4rem;
 }
 
 .presentation__intro {
@@ -113,7 +118,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #11050b3f;
+    background-color: #11050b7a;
     color: var(--yellow-light);
 }
 
@@ -129,4 +134,64 @@ html, body {
 
 .presentation__intro > a {
     color: var(--orange-light);
+}
+
+/* Informative section */
+
+.informative {
+    height: 50vh;
+    padding: 0 4rem;
+}
+
+.informative__text {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow-light);
+}
+
+.informative__text > p {
+    text-align: center;
+    width: 70vw;
+}
+
+
+
+
+/* carousel */
+
+.carousel {
+    padding: 4rem;
+}
+
+.carousel__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel__item {
+    display: none;
+}
+
+.carousel__item.active,
+.carousel__item.next,
+.carousel__item.prev {
+    display: block;
+}
+
+.carousel__item img {
+    width: 400px;
+    height: 600px;
+}
+
+
+
+
+/* Card Board */
+
+.card-board {
+
 }

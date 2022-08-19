@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,35 +13,86 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navbar__logo">
-            <h3>HAK Corp</h3>
-            <span>The greatest solutions you want</span>
-        </div>
-        <div class="navbar__links">
-            <ul class="navbar__links-list">
-                <li class="navbar__links-item">
-                    <a class="navbar__link" href="#">Home</a>
-                </li>
-                <li class="navbar__links-item">
-                    <a class="navbar__link" href="#">Contact</a>
-                </li>
-                <li class="navbar__links-item">
-                    <a class="navbar__link" href="#">About</a>
-                </li>
-                <li class="navbar__links-item">
-                    <a class="navbar__link" href="#">Our Customers</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="presentation">
-        <div class="presentation__intro">
-            <h3 class="header--big">We are your solution!</h3>
-            <p>Simply because we are the best on the market, and no one will provide a solution as we provide. We are the greatest solution you want!</p>
-            <a href="#">see more...</a>
-        </div>
-    </div>
+    <main>
+
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <h3>HAK Corp</h3>
+                <span>The greatest solutions you want</span>
+            </div>
+            <div class="navbar__links">
+                <ul class="navbar__links-list">
+                    <li class="navbar__links-item">
+                        <a class="navbar__link" href="#">Home</a>
+                    </li>
+                    <li class="navbar__links-item">
+                        <a class="navbar__link" href="#">Contact</a>
+                    </li>
+                    <li class="navbar__links-item">
+                        <a class="navbar__link" href="#">About</a>
+                    </li>
+                    <li class="navbar__links-item">
+                        <a class="navbar__link" href="#">Our Customers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="presentation">
+            <div class="presentation__intro">
+                <h3 class="header--big">We are your solution!</h3>
+                <p>Simply because we are the best on the market, and no one will provide a solution as we provide. We
+                    are the greatest solution you want!</p>
+                <a href="#informative">see more...</a>
+            </div>
+        </section>
+
+        <section class="informative section--black" id="informative">
+            <div class="informative__text">
+                <p>Our solution is based on a lot of background experience, with a qualified team that will do
+                    everything to create the best solution for your busines.
+                </p>
+            </div>
+        </section>
+
+        <section class="carousel section--black">
+            <div class="carousel__container">
+                <div class="carousel__item prev">
+                    <img src="./public/imgs/homepage.webp" alt="Futuristic Image">
+                    <p></p>
+                </div>
+                <div class="carousel__item active">
+                    <img src="./public/imgs/homepage.webp" alt="Futuristic Image">
+                    <p></p>
+                </div>
+                <div class="carousel__item next">
+                    <img src="./public/imgs/homepage.webp" alt="Futuristic Image">
+                    <p></p>
+                </div>
+                <div class="carousel__item">
+                    <img src="./public/imgs/homepage.webp" alt="Futuristic Image">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="informative">
+            <div class="informative__text">
+                <p>We allways look for the best customers and best behavior to make you feel more confortable as
+                    possible.
+                </p>
+            </div>
+        </section>
+
+        <section class="card-board" style="background-color: #FFF;">
+            
+        </section>
+
+    </main>
+
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

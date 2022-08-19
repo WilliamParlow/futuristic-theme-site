@@ -42,3 +42,24 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #ce6824 #112144;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #112144;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #ce6824;
+	border-radius: 2px;
+	border: none;
+}
