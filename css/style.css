@@ -31,6 +31,7 @@ h6 {
 
 html, body {
     background-color: var(--navy-blue);
+    overflow-x: hidden;
 }
 
 .header--big {
@@ -172,11 +173,8 @@ html, body {
 .carousel__item {
     position: absolute;
     opacity: 0;
-    transition: .6s;
     border-radius: 2px;
     box-shadow: 0 2px 8px -2px var(--blue-dark);
-    animation: carousel-default 1s ease-in-out;
-    animation-fill-mode: forwards;
 }
 
 .carousel__item.active {
@@ -185,6 +183,7 @@ html, body {
     height: 600px;
     z-index: 10;
     animation: carousel-active 1s ease-in-out;
+    animation-fill-mode: forwards;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -248,51 +247,39 @@ html, body {
 @keyframes carousel-active {
     0% {
         opacity: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(.9);
+        transform: translate(0%, -50%);
+    }
+    50% {
+        transform: translate(0%, -50%);
     }
     100% {
+        transform: translate(-50%, -50%);
         opacity: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
     }
 }
 @keyframes carousel-next {
     0% {
         opacity: 0;
-        top: 50%;
-        transform: translateY(-50%) scale(.9);
+        transform: translate(0%, -50%);
+    }
+    50% {
+        transform: translate(50%, -50%);
     }
     100% {
+        transform: translateY(-50%);
         opacity: 1;
-        top: 50%;
-        transform: translateY(-50%) scale(1);
     }
 }
 @keyframes carousel-prev {
     0% {
         opacity: 0;
-        top: 50%;
-        transform: translateY(-50%) scale(.9);
+        transform: translate(50%, -50%);
+    }
+    50% {
+        transform: translate(0%, -50%);
     }
     100% {
+        transform: translateY(-50%);
         opacity: 1;
-        top: 50%;
-        transform: translateY(-50%) scale(1);
-    }
-}
-
-@keyframes carousel-default {
-    0% {
-        opacity: 1;
-        top: 50%;
-        transform: translateY(-50%) scale(.9);
-    }
-    100% {
-        opacity: 0;
-        top: 50%;
-        transform: translateY(-50%) scale(.4);
     }
 }
