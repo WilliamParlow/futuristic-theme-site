@@ -157,8 +157,6 @@ html, body {
 }
 
 
-
-
 /* carousel */
 
 .carousel {
@@ -166,32 +164,135 @@ html, body {
 }
 
 .carousel__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 75vh;
+    min-height: 600px;
     position: relative;
 }
 
 .carousel__item {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: .6s;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px -2px var(--blue-dark);
+    animation: carousel-default 1s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
-.carousel__item.active,
+.carousel__item.active {
+    opacity: 1;
+    width: 600px;
+    height: 600px;
+    z-index: 10;
+    animation: carousel-active 1s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .carousel__item.next,
 .carousel__item.prev {
-    display: block;
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel__item.next {
+    right: 0;
+    animation: carousel-next 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.carousel__item.prev {
+    left: 0;
+    animation: carousel-prev 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.carousel__item.next::after,
+.carousel__item.prev::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .carousel__item img {
-    width: 400px;
+    width: 100%;
     height: 600px;
+    border-radius: 2px;
 }
 
-
+.carousel__item.next img,
+.carousel__item.prev img {
+    height: 400px;
+}
 
 
 /* Card Board */
 
 .card-board {
 
+}
+
+
+
+
+/* Animations */
+
+@keyframes carousel-active {
+    0% {
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.9);
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes carousel-next {
+    0% {
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%) scale(.9);
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+        transform: translateY(-50%) scale(1);
+    }
+}
+@keyframes carousel-prev {
+    0% {
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%) scale(.9);
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+@keyframes carousel-default {
+    0% {
+        opacity: 1;
+        top: 50%;
+        transform: translateY(-50%) scale(.9);
+    }
+    100% {
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%) scale(.4);
+    }
 }
