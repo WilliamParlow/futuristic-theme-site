@@ -42,6 +42,10 @@ html, body {
     background-color: var(--black);
 }
 
+.item--orange-light {
+    color: var(--orange-light);
+}
+
 
 
 
@@ -230,6 +234,22 @@ html, body {
 .carousel__item.next img,
 .carousel__item.prev img {
     height: 400px;
+}
+
+.carousel__item .carousel__text {
+    display: none;
+}
+
+.carousel__item.active .carousel__text {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    background-color: #11050b7a;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
