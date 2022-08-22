@@ -21,5 +21,5 @@ window.onload = () => {
             newNext.classList.add('next');
         }
 
-    }, 5000);
+    }, 4200);
 }
