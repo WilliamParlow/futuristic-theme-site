@@ -102,6 +102,10 @@ html, body {
     height: 100%;
 }
 
+.navbar__menu {
+    display: none;
+}
+
 
 
 
