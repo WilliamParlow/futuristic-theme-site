@@ -18,15 +18,39 @@
 <body>
     <main>
 
-        <nav class="navbar">
-            <div class="navbar__menu" data-target=".navbar__links-list">
-                <div class="navbar__bread--top"></div>
-                <div class="navbar__cheese"></div>
-                <div class="navbar__bread--bottom"></div>
+        <nav class="menu__mobile">
+            <div class="menu__close">
+                x
             </div>
+            <div class="menu__logo">
+                <h3>HAK Corp</h3>
+                <span>The greatest solutions you want</span>
+            </div>
+            <ul class="menu__links-list">
+                <li class="menu__links-item">
+                    <a class="menu__link" href="#">Home</a>
+                </li>
+                <li class="menu__links-item">
+                    <a class="menu__link" href="#">Contact</a>
+                </li>
+                <li class="menu__links-item">
+                    <a class="menu__link" href="#">About</a>
+                </li>
+                <li class="menu__links-item">
+                    <a class="menu__link" href="#">Our Customers</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
             <div class="navbar__logo">
                 <h3>HAK Corp</h3>
                 <span>The greatest solutions you want</span>
+            </div>
+            <div class="navbar__menu" data-target=".menu__mobile">
+                <div class="navbar__bread--top"></div>
+                <div class="navbar__cheese"></div>
+                <div class="navbar__bread--bottom"></div>
             </div>
             <div class="navbar__links">
                 <ul class="navbar__links-list">

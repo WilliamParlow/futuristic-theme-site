@@ -46,6 +46,10 @@ html, body {
     color: var(--orange-light);
 }
 
+main {
+    position: relative;
+}
+
 
 
 
@@ -102,8 +106,59 @@ html, body {
     height: 100%;
 }
 
-.navbar__menu {
+
+
+
+/*-------------*/
+/* Mobile Menu */
+
+.menu__mobile {
     display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+    background-color: var(--black);
+}
+
+.menu__close {
+    display: flex;
+    justify-content: right;
+    color: var(--yellow);
+    padding: 1rem;
+}
+
+.menu__links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 5rem);
+}
+
+.menu__link {
+    color: var(--aqua);
+    text-decoration: none;
+}
+
+.menu__links-item {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.menu__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--aqua);
+    cursor: default;
+    user-select: none;
+}
+
+.menu__logo > span {
+    font-size: 70%;
 }
 
 

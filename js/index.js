@@ -1,4 +1,5 @@
-$ = document.querySelector.bind(document);
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 window.onload = () => {
     setInterval(() => {
         const active = $('.carousel__item.active');
@@ -22,4 +23,28 @@ window.onload = () => {
         }
 
     }, 4200);
+
+    $('.navbar__menu').onclick = (event) => {
+        const $target = $(event.target.parentElement.dataset.target);
+        const $menu = event.target.parentElement;
+
+        $target.classList.add('active');
+        $menu.classList.add('active');
+        $$('.navbar__menu > div').forEach(e => {
+            e.classList.add('active');
+        });
+
+        $('html').style.overflowY='hidden';
+    }
+
+    $('.menu__close').onclick = (event) => {
+        $('.menu__mobile').classList.remove('active');
+        $('.navbar__menu').classList.remove('active');
+        
+        $$('.navbar__menu > div').forEach(e => {
+            e.classList.remove('active');
+        });
+
+        $('html').style.overflowY='auto';
+    }
 }
