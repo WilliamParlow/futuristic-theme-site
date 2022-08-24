@@ -1,4 +1,6 @@
 @media screen and (max-width: 968px) {
+
+    /* Mobile menu */
     .navbar {
         align-items: center;
         flex-direction: column;
@@ -54,6 +56,11 @@
         animation: mobile-menu-toggle .5s ease-in-out;
         animation-fill-mode: forwards;
     }
+
+    
+
+    /* Presentation */
+
     .presentation__intro > h3 {
         text-align: center;
         margin-bottom: 5rem;
@@ -61,6 +68,106 @@
     .presentation__intro > p {
         text-align: center;
         margin-bottom: 2.5rem;
+    }
+
+
+
+    /* Carousel */
+    .carousel__item.active {
+        width: 300px;
+        height: 300px;
+    }
+    .carousel__item.next,
+    .carousel__item.prev {
+        width: 200px;
+        height: 200px;
+    }
+    .carousel__item img {
+        height: 300px;
+    }
+    
+    .carousel__item.next img,
+    .carousel__item.prev img {
+        height: 200px;
+    }
+
+    .carousel {
+        height: 50vh;
+        padding-bottom: 10rem;
+    }
+
+
+
+    /* Mobile animation */
+
+    @keyframes carousel-active {
+        0% {
+            opacity: 0;
+            transform: translate(0%, -50%);
+        }
+        8% {
+            opacity: 1;
+        }
+        15% {
+            transform: translate(0%, -50%);
+        }
+        25% {
+            transform: translate(-50%, -50%);
+        }
+        95% {
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+    @keyframes carousel-next {
+        0% {
+            opacity: 0;
+            transform: translate(0%, -50%);
+        }
+        8% {
+            opacity: 1;
+        }
+        15% {
+            transform: translate(25%, -50%);
+        }
+        30% {
+            transform: translate(10%, -50%);
+        }
+        95% {
+            transform: translate(10%, -50%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(10%, -50%);
+            opacity: 0;
+        }
+    }
+    @keyframes carousel-prev {
+        0% {
+            opacity: 0;
+            transform: translate(50%, -50%);
+        }
+        8% {
+            opacity: 1;
+        }
+        15% {
+            transform: translate(25%, -50%);
+        }
+        30% {
+            transform: translate(-10%, -50%);
+        }
+        95% {
+            opacity: 1;
+            transform: translate(-10%, -50%);
+        }
+        100% {
+            transform: translate(-10%, -50%);
+            opacity: 0;
+        }
     }
 }
 
