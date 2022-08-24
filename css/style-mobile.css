@@ -28,11 +28,11 @@
         transition: .3s;
     }
     .navbar__menu > div {
-        border-top: solid 1.5px var(--aqua);
-        border-bottom: solid 1.5px var(--aqua);
+        border-top: solid 1.5px var(--yellow-light);
+        border-bottom: solid 1.5px var(--yellow-light);
         width: 2rem;
         border-radius: 2px;
-        background-color: var(--aqua);   
+        background-color: var(--yellow-light);   
     }
     .navbar__bread--top {
         margin-top: .3rem;

@@ -68,7 +68,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--aqua);
+    color: var(--yellow-light);
     margin-right: 4rem;
     cursor: default;
     user-select: none;
@@ -90,14 +90,14 @@ main {
     height: 100%;
     align-items: center;
     text-decoration: none;
-    color: var(--aqua);
+    color: var(--yellow-light);
     padding: 0 1rem;
     transition: .2s;
 }
 
 .navbar__links-item > .navbar__link:hover {
     transition: .2s;
-    color: var(--yellow-light);
+    color: var(--orange-light);
 }
 
 .navbar__links-list {
@@ -137,7 +137,7 @@ main {
 }
 
 .menu__link {
-    color: var(--aqua);
+    color: var(--yellow-light);
     text-decoration: none;
 }
 
@@ -152,7 +152,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--aqua);
+    color: var(--yellow-light);
     cursor: default;
     user-select: none;
 }
