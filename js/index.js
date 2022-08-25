@@ -1,6 +1,8 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 window.onload = () => {
+    $('#footer-year').innerHTML = new Date().getFullYear();
+
     setInterval(() => {
         const active = $('.carousel__item.active');
         const next = $('.carousel__item.next');

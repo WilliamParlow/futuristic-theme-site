@@ -42,6 +42,10 @@ html, body {
     background-color: var(--black);
 }
 
+.section--yellow {
+    background-color: var(--yellow-dark);
+}
+
 .item--orange-light {
     color: var(--orange-light);
 }
@@ -327,6 +331,33 @@ main {
 
 }
 
+
+
+
+/* Footer */
+
+.footer__container {
+    color: var(--black);
+    padding: 6rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__col > h4 {
+    margin-bottom: 4rem;
+}
+
+.footer__col > ul > li {
+    margin-bottom: .4rem;
+}
+
+.footer__copyright {
+    padding: 1.6rem;
+    text-align: center;
+    color: var(--yellow-light);
+    background-color: var(--black);
+    font-size: 80%;
+}
 
 
 
