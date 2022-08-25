@@ -354,7 +354,7 @@ main {
 .footer__copyright {
     padding: 1.6rem;
     text-align: center;
-    color: var(--yellow-light);
+    color: var(--yellow-dark);
     background-color: var(--black);
     font-size: 80%;
 }
