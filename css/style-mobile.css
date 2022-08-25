@@ -91,9 +91,9 @@
         height: 200px;
     }
 
-    .carousel {
-        height: 50vh;
-        padding-bottom: 10rem;
+    .carousel,
+    .carousel__container {
+        height: 80vh;
     }
 
 
