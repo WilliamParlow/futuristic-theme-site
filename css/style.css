@@ -190,12 +190,13 @@ main {
 }
 
 .presentation__intro > h3 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .presentation__intro > p {
     font-size: 90%;
-    margin-bottom: .5rem;
+	width: 40rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -354,7 +355,7 @@ main {
 .footer__copyright {
     padding: 1.6rem;
     text-align: center;
-    color: var(--yellow-dark);
+    color: var(--yellow-light);
     background-color: var(--black);
     font-size: 80%;
 }
