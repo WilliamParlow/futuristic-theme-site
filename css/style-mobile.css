@@ -122,6 +122,66 @@
 
 
 
+
+    /* Card */
+
+    .card-board {
+        background-image: url(../public/imgs/cards/card-board-bg-1.webp);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        color: var(--orange-light);
+    }
+    
+    .card,
+    .card.card--reverse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        background-color: #11050bde;
+    }
+    
+    .card:first-child {
+        padding: 10rem 0;
+    }
+    
+    .card:last-child {
+        padding-bottom: 10rem;
+    }
+    
+    .card .card__image {
+        box-sizing: border-box;
+    }
+    
+    .card .card__container {
+        padding: 1rem;
+        clear: initial;
+        float: initial;
+        position: initial;
+        width: initial;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .card .card__text {
+        padding: 2rem;
+        font-size: 75%;
+        position: initial;
+        transform: translate(0, 0);
+        box-shadow: none;
+        background-color: initial;
+    }
+    
+    .card .card__text {
+        top: initial;
+        left: initial;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+
+
     /* Mobile animation */
 
     @keyframes carousel-active {
