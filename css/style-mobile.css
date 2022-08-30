@@ -180,6 +180,10 @@
         width: 100%;
     }
 
+    .card .card__image {
+        max-height: 300px;
+    }
+
 
 
     /* Mobile animation */

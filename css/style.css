@@ -177,9 +177,10 @@ main {
 /* Presentation section */
 
 .presentation {
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 6rem - 10px);
     background-image: url("../public/imgs/homepage.webp");
     background-size: 100% 100%;
+    padding: 5px;
 }
 
 .presentation__intro {
@@ -313,7 +314,7 @@ main {
     display: none;
 }
 
-.carousel__item.active .carousel__text {
+.carousel__item .carousel__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,6 +328,10 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.carousel__item:not(.active) .carousel__text p {
+    display: none;
 }
 
 
@@ -397,10 +402,11 @@ main {
 
 .card .card__image .image__overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    transform: translate(-50%, -50%);
 }
 
 .card .card__image .image__overlay {
