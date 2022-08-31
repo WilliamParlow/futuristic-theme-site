@@ -137,8 +137,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: none;
-        background-color: #11050bde;
     }
     
     .card:first-child {
