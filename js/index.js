@@ -27,7 +27,7 @@ window.onload = () => {
     }, 4200);
 
     $('.navbar__menu').onclick = (event) => {
-        const $target = $(event.target.parentElement.dataset.target);
+        const $target = $(event.target.parentElement.dataset.target || event.target.dataset.target);
         const $menu = event.target.parentElement;
 
         $target.classList.add('active');

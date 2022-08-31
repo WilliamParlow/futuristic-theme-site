@@ -3,8 +3,9 @@
     /* Mobile menu */
     .navbar {
         align-items: center;
+        justify-content: center;
         flex-direction: column;
-        height: auto;
+        height: 5rem;
         position: relative;
     }
     .navbar__logo {
@@ -60,6 +61,10 @@
     
 
     /* Presentation */
+
+    .presentation {
+        height: calc(100vh - 5rem - 10px);
+    }
 
     .presentation__intro > h3 {
         text-align: center;
