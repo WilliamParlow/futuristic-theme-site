@@ -156,6 +156,10 @@
         box-sizing: border-box;
 	transform: translateX(0px);
     }
+	
+    .card.card--reverse {
+	transform: translateX(0px);
+    }
     
     .card .card__container {
         padding: 1rem;
