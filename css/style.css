@@ -398,6 +398,7 @@ main {
     height: 50vh;
     max-width: 900px;
     max-height: 600px;
+    transform: translateX(-10px);
 }
 
 .card .card__image .image__overlay {
@@ -433,6 +434,7 @@ main {
 
 .card.card--reverse .card__image {
     float: right;
+    transform: translateX(10px);
 }
 
 .card .card__text {
