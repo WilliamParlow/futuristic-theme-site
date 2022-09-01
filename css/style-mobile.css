@@ -154,6 +154,7 @@
     
     .card .card__image {
         box-sizing: border-box;
+	transform: translateX(0px);
     }
     
     .card .card__container {
