@@ -8,12 +8,15 @@
         height: 5rem;
         position: relative;
     }
+
     .navbar__logo {
         margin: 1rem 0;
     }
+
     .navbar__links {
         display: none;
     }
+
     .navbar__menu {
         margin-left: .6rem;
         border-radius: 2px;
@@ -30,27 +33,33 @@
         z-index: 20;
         transition: .3s;
     }
-    .navbar__menu > div {
+
+    .navbar__menu>div {
         border-top: solid 1.5px var(--yellow-light);
         border-bottom: solid 1.5px var(--yellow-light);
         width: 2rem;
         border-radius: 2px;
-        background-color: var(--yellow-light);   
+        background-color: var(--yellow-light);
     }
+
     .navbar__bread--top {
         margin-top: .3rem;
         margin-bottom: .3rem;
     }
+
     .navbar__cheese {
         margin-bottom: .3rem;
     }
+
     .navbar__bread--bottom {
         margin-bottom: .3rem;
     }
-    .navbar__menu > div.active {
+
+    .navbar__menu>div.active {
         border-color: var(--orange-light);
         transition: .3s;
     }
+
     .menu__mobile.active {
         display: block;
         opacity: 0;
@@ -58,7 +67,7 @@
         animation-fill-mode: forwards;
     }
 
-    
+
 
     /* Presentation */
 
@@ -66,12 +75,13 @@
         height: calc(100vh - 5rem - 10px);
     }
 
-    .presentation__intro > h3 {
+    .presentation__intro>h3 {
         text-align: center;
         margin-bottom: 5rem;
     }
-    .presentation__intro > p {
-		width: 90%;
+
+    .presentation__intro>p {
+        width: 90%;
         text-align: center;
         margin-bottom: 2.5rem;
     }
@@ -83,15 +93,17 @@
         width: 300px;
         height: 300px;
     }
+
     .carousel__item.next,
     .carousel__item.prev {
         width: 200px;
         height: 200px;
     }
+
     .carousel__item img {
         height: 300px;
     }
-    
+
     .carousel__item.next img,
     .carousel__item.prev img {
         height: 200px;
@@ -113,15 +125,15 @@
         text-align: center;
     }
 
-    .footer__col > h4 {
+    .footer__col>h4 {
         margin-bottom: 1rem;
     }
 
     .footer__col:not(:last-child) {
         margin-bottom: 6rem;
     }
-    
-    .footer__col > ul > li {
+
+    .footer__col>ul>li {
         margin-bottom: .6rem;
     }
 
@@ -136,31 +148,31 @@
         background-attachment: fixed;
         color: var(--orange-light);
     }
-    
+
     .card,
     .card.card--reverse {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .card:first-child {
         padding: 10rem 0;
     }
-    
+
     .card:last-child {
         padding-bottom: 10rem;
     }
-    
+
     .card .card__image {
         box-sizing: border-box;
-	transform: translateX(0px);
+        transform: translateX(0px);
     }
-	
-    .card.card--reverse {
-	transform: translateX(0px);
+
+    .card.card--reverse .card__image {
+        transform: translateX(0px);
     }
-    
+
     .card .card__container {
         padding: 1rem;
         clear: initial;
@@ -170,8 +182,8 @@
         display: flex;
         flex-direction: column;
     }
-    
-    
+
+
     .card .card__text {
         padding: 2rem;
         font-size: 75%;
@@ -180,7 +192,7 @@
         box-shadow: none;
         background-color: initial;
     }
-    
+
     .card .card__text {
         top: initial;
         left: initial;
@@ -201,65 +213,82 @@
             opacity: 0;
             transform: translate(0%, -50%);
         }
+
         8% {
             opacity: 1;
         }
+
         15% {
             transform: translate(0%, -50%);
         }
+
         25% {
             transform: translate(-50%, -50%);
         }
+
         95% {
             transform: translate(-50%, -50%);
             opacity: 1;
         }
+
         100% {
             transform: translate(-50%, -50%);
             opacity: 0;
         }
     }
+
     @keyframes carousel-next {
         0% {
             opacity: 0;
             transform: translate(0%, -50%);
         }
+
         8% {
             opacity: 1;
         }
+
         15% {
             transform: translate(25%, -50%);
         }
+
         30% {
             transform: translate(10%, -50%);
         }
+
         95% {
             transform: translate(10%, -50%);
             opacity: 1;
         }
+
         100% {
             transform: translate(10%, -50%);
             opacity: 0;
         }
     }
+
     @keyframes carousel-prev {
         0% {
             opacity: 0;
             transform: translate(50%, -50%);
         }
+
         8% {
             opacity: 1;
         }
+
         15% {
             transform: translate(25%, -50%);
         }
+
         30% {
             transform: translate(-10%, -50%);
         }
+
         95% {
             opacity: 1;
             transform: translate(-10%, -50%);
         }
+
         100% {
             transform: translate(-10%, -50%);
             opacity: 0;
@@ -272,6 +301,7 @@
         opacity: 0;
         transform: scale(0);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
