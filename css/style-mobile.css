@@ -157,11 +157,11 @@
     }
 
     .card:first-child {
-        padding: 10rem 0;
+        padding: 8rem 0 3rem 0;
     }
 
     .card:last-child {
-        padding-bottom: 10rem;
+        padding-bottom: 6rem;
     }
 
     .card .card__image {
